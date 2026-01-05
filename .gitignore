@@ -1,0 +1,40 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+
+# Virtual environment
+venv/
+env/
+
+# Data files
+notebooks/data/
+*.csv
+*.xlsx
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Others
+*.zip
+*.tar.gz
+# Ignore processed and raw data
+notebooks/data/processed/
+data/raw/data/raw/
+notebooks/data/processed/
+
+vector_store/
+
+# Ignore large data and model files
+data/
+*.csv
+*.xlsx
+*.pkl
+*.h5
+.ipynb_checkpoints/
