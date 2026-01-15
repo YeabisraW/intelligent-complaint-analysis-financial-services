@@ -22,4 +22,4 @@ See the repository structure for data preprocessing, vector indexing, RAG pipeli
 - Gradio / Streamlit
 
 ## Status
-🚧 In Progress – Tasks 1 & 2 completed
+🚧 all tasks are completed.
