@@ -66,9 +66,11 @@ def chunk_texts(df: pd.DataFrame, text_col: str, id_col: str, product_col: str,
         chunks = text_splitter.split_text(str(row[text_col]))
         for chunk in chunks:
             texts.append(chunk)
+            # UPDATED: Added the "text" key so Task 3 has content to read
             metadata.append({
                 "complaint_id": row[id_col],
-                "product": row[product_col]
+                "product": row[product_col],
+                "text": chunk  
             })
     return texts, metadata
 
@@ -141,8 +143,5 @@ def main():
 
     print("🎉 Task 2 pipeline completed successfully!")
 
-# -----------------------------
-# Entry Point
-# -----------------------------
 if __name__ == "__main__":
     main()
